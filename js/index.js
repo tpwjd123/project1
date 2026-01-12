@@ -4,6 +4,8 @@ document.querySelector('button').addEventListener('click', (e) => {
   document.querySelector('.popup').style.display = 'none';
 })
 
+document.querySelector('.sticky')
+
 // main_swiper
 let swiper = new Swiper(".main_Swiper", {
   spaceBetween: 0,
