@@ -328,7 +328,9 @@ if (document.querySelector('.section1')) initSection1Tabs();
 if (document.querySelector('.section2')) initSection2Tabs();
 singleTab();
 
+
 // banner_swiper (기존 유지)
+
 let swiperBanner = new Swiper(".banner .banner_swiper", {
   slidesPerView: 2,
   spaceBetween: 0,
@@ -344,7 +346,7 @@ let swiperBanner = new Swiper(".banner .banner_swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-})
+});
 
 // 스크롤시 gnb 메뉴바 스타일변경 (기존 유지)
 let gnb = document.querySelector('.gnb');
