@@ -24,7 +24,7 @@ a {
 
 .inner {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   height: inherit;
   margin: 0 auto;
 }
@@ -441,7 +441,7 @@ main {
 .bgcolor {
   width: 100vw;
   height: auto;
-  background-color: rgba(163, 234, 255, 0.192);
+  /* background-color: rgba(163, 234, 255, 0.192); */
   margin-left: calc(-50vw + 50%);
   padding: 6vw 0;
   position: relative;
@@ -514,28 +514,31 @@ main {
   text-shadow: 2px 2px 5px rgb(196, 196, 196);
 }
 
-.section1 .title h2, .section2 .title h2, .section3 .title h2 {
+.section1 .title h2, .section3 .title h2 {
   color: #666;
   font-size: 3.2rem;
   font-weight: 400;
+}
+
+.section2 .title h2{
+  color: #555;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .section1 .title span {
   color: #007bff;
 }
 
-.section2 .title span {
-  color: rgb(140, 0, 255);
-}
-
 .section3 .title h2 span {
   color: #ff04c0;
 }
 
-.section1 .title p, .section2 .title p {
+.section1 .title p{
   color: #666;
   font-size: 1.4rem;
 }
+
 
 .section3 .title p {
   color: #666;
@@ -622,47 +625,63 @@ main {
   -webkit-text-fill-color: white;
 }
 
-/* Section2 탭 버튼 */
-.section2 .section_tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 30px;
+/* section2 */
+
+.section2 .promotion {
+  height: auto;
 }
 
-.section2 .description {
-  text-align: center;
-  color: #666;
-  font-size: 1.2rem;
-  margin-bottom: 50px;
-}
-
-.btn_s2 {
+.section2.bgpoint {
+  background: linear-gradient(271.73deg, #aee5fb -7.24%, #d0e0f5 49.3%, #ffdef6 105.84%);
+  width: 100vw;
+  height: auto;
+  margin-left: calc(-50vw + 50%);
+  padding: 6vw 0;
   position: relative;
-  width: 150px;
-  height: 45px;
-  background: linear-gradient(0deg, rgba(255, 193, 7, 1) 0, rgba(255, 152, 0, 1) 100%);
-  font-size: 16px;
-  border: none;
-  color: #fff;
+}
+
+.section2_sw .swiper-slide a{
+  display: block;
+  height: 100%;
+  border-radius: 50rem 50rem 0 0;
+  filter: drop-shadow(0px 0px 2rem rgba(26, 26, 26, 0.08));
+  overflow: hidden;
+  position: relative;
+}
+
+.section2_sw .swiper-slide .img {
+  display: block;
+  height: 16rem;
+  overflow: hidden;
+}
+
+.section2_sw .swiper-slide .img img {
+  border-radius: 0;
+}
+
+.section2_sw .swiper-slide .caption2 {
+  height: 6rem;
+  border-radius: 0 0 0.6rem 0.6rem;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+
+.section2 .swiper-slide:hover .caption2 strong {
   cursor: pointer;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+  text-decoration: underline;
 }
 
-.btn_s2.active {
-  background-color: #ff9800;
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
-}
-
-.btn_s2:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.3);
-}
-
+/* 더보기 버튼 공통 스타일 */
 .btn2 {
   width: 210px;
   height: 55px;
@@ -673,20 +692,19 @@ main {
   border: 2px solid #007bff15;
   color: #555;
   font-weight: 500;
-  background-color: #fffdfd; 
+  background-color: #fffdfd;
   font-size: 16px;
 }
 
-.btn2::after{
+.btn2::after {
   content: '↗';
   display: inline;
   padding-left: 10px;
 }
 
-.btn2:hover{
-    background-color: #007bff;
-    color: #fff;
-
+.btn2:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
 /* 공통 스와이퍼 이미지 스타일 */
@@ -706,19 +724,21 @@ main {
   margin: 10px 0;
 }
 
-.section2_sw .swiper-slide img, .section3_sw .swiper-slide img {
+.section3_sw .swiper-slide img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 20px;
 }
 
+/* 스와이퍼 이미지 호버시 */
+
 .swiper-slide:hover img {
   transform: scale(1.02);
   transition: all .5s ease-out;
 }
 
-.swiper-slide:hover .caption {
+.section1 .swiper-slide:hover .caption {
   background-color: #007bff15;
   cursor: pointer;
 }
@@ -890,7 +910,7 @@ footer {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -901,7 +921,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   font-size: 16px;
   background-color: #f0f0f0;
   margin-left: calc(-50vw + 50%);
@@ -913,7 +933,7 @@ footer {
 
 .alert {
   text-align: center;
-  width: 25%;
+  width: 30%;
   height: 50px;
   overflow: hidden;
   position: relative;
