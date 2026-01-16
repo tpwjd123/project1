@@ -260,7 +260,7 @@ header {
   width: 100%;
   height: 0;
   position: absolute;
-  top: 90px;
+  top: 69px;
   transition: height 0.5s;
   background-color: #f4f5f8f5;
   z-index: 15;
@@ -579,7 +579,7 @@ main {
 
 .header_slide .material-symbols-outlined {
   font-size: 4.8rem;
-  color: #ffffffc7;
+  color: #ffffffb0;
 }
 
 .banner .material-symbols-outlined {
@@ -734,7 +734,7 @@ main {
 .section2 .title {
   text-align: left;
   line-height: 1.75;
-  margin-bottom: 6vw;
+  margin-bottom: 5.6vw;
   padding: 1rem;
   background: linear-gradient(271.73deg, #aee5fb -7.24%, #d0e0f5 49.3%, #ffdef6 105.84%);
   border-radius: 10px;
@@ -795,11 +795,22 @@ main {
   line-height: 1.4;
 }
 
-
 .section2 .swiper-slide:hover .caption2 strong {
   cursor: pointer;
   text-decoration: underline;
 }
+
+/* section3 */
+.section3 .swiper-slide img {
+      border-radius: 10px;
+}
+
+.section3 .swiper-slide:hover img {
+  transform: rotateY(180deg);
+  transition: all .5s ease-out;
+}
+
+
 
 /* 더보기 버튼 공통 스타일 */
 .btn2 {
