@@ -606,7 +606,7 @@ main {
   text-align: center;
   line-height: 1.75;
   margin-bottom: 3vw;
-  text-shadow: 2px 2px 5px rgb(196, 196, 196);
+  /* text-shadow: 2px 2px 5px rgb(196, 196, 196); */
 }
 
 
@@ -614,7 +614,7 @@ main {
   text-align: left;
   line-height: 1.75;
   margin-bottom: 65px;
-  text-shadow: 2px 2px 5px rgb(196, 196, 196);
+  /* text-shadow: 2px 2px 5px rgb(196, 196, 196); */
 }
 
 .section1 .title h2, .section3 .title h2 {
@@ -629,7 +629,7 @@ main {
 }
 
 .section3 .title h2 span {
-  color: #ff04c0;
+  color: #00c2ff;
 }
 
 .section1 .title p {
@@ -814,10 +814,6 @@ main {
 /* section3 */
 .section3 .swiper-slide img {
       border-radius: 10px;
-}
-
-.section3 .swiper-slide:hover img {
- 
 }
 
 
