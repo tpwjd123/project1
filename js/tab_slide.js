@@ -47,9 +47,6 @@ function initAllTabs() {
     // Section1 탭
     initTabFunction('.section1', '[data-tab^="tab1-"]', 'btn_s1');
 
-    // Section2 탭  
-    initTabFunction('.section2', '[data-tab^="tab2-"]', 'btn_s2');
-
     // Section3 탭
     initTabFunction('.section3', '[data-tab^="tab3-"]', 'tab_menu');
 }
@@ -104,7 +101,7 @@ function initAllSwipers() {
     const contentSwipers = [
         '.section1_sw', '.section1_sw2', '.section1_sw3',
         '.section2_sw', '.section2_sw2', '.section2_sw3', '.section2_sw4',
-        '.section3_sw', '.section3_sw2', '.section3_sw3', '.section3_sw4', '.section3_sw5'
+        '.section3_sw', '.section3_sw2', '.section3_sw3', '.section3_sw4'
     ];
 
     contentSwipers.forEach(selector => {
