@@ -16,9 +16,9 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 if (hamburgerMenu && mobileMenu) {
-    hamburgerMenu.addEventListener('click', function() {
+    hamburgerMenu.addEventListener('click', function () {
         mobileMenu.classList.toggle('active');
-        
+
         // 햄버거 아이콘을 X로 변경
         const icon = this.querySelector('i');
         if (mobileMenu.classList.contains('active')) {
@@ -29,7 +29,7 @@ if (hamburgerMenu && mobileMenu) {
     });
 
     // 모바일 메뉴 외부 클릭 시 닫기
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!hamburgerMenu.contains(e.target) && !mobileMenu.contains(e.target)) {
             mobileMenu.classList.remove('active');
             const icon = hamburgerMenu.querySelector('i');
@@ -99,9 +99,9 @@ function initTabFunction(sectionSelector, tabSelector, buttonClass) {
 function initAllSwipers() {
     // 모든 콘텐츠 스와이퍼들을 루프로 초기화
     const contentSwipers = [
-        '.section1_sw', '.section1_sw2', '.section1_sw3',
-        '.section2_sw', '.section2_sw2', '.section2_sw3', '.section2_sw4',
-        '.section3_sw', '.section3_sw2', '.section3_sw3', '.section3_sw4'
+        '.section1_sw',
+        '.section2_sw',
+        '.section3_sw', '.section3_sw2', '.section3_sw3', '.section4_sw'
     ];
 
     contentSwipers.forEach(selector => {

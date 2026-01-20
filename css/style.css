@@ -66,7 +66,10 @@ img {
   content: "";
 }
 
-.swiper-button-lock { display: block !important; /* 숨기지 않도록 */ }
+.swiper-button-lock {
+  display: block !important;
+  /* 숨기지 않도록 */
+}
 
 /* ======= header ====== */
 header {
@@ -126,14 +129,10 @@ header {
 }
 
 .hamburger-menu:hover {
-  color: #00d9ff;
-  transform: scale(1.1);
+  color: #007bff;
+  transform: scale(1.15);
 }
 
-.hamburger-menu:hover {
-  color: #00d9ff;
-  transform: scale(1.1);
-}
 
 /* 햄버거 메뉴 활성화 시 X 아이콘으로 변경 */
 .hamburger-menu.active i:before {
@@ -187,7 +186,7 @@ header {
 
 .mobile-menu a:hover {
   background-color: #f0f0f0;
-  color: #00d9ff;
+  color: #007bff;
 }
 
 .dep1 {
@@ -213,7 +212,7 @@ header {
   left: 0;
   font-size: 6px;
   content: "●";
-  color: #dcf5ff;
+  color: #f5f5f5;
   opacity: 0;
 }
 
@@ -223,7 +222,7 @@ header {
 }
 
 .dep1>li>a:hover {
-  color: #00d9ff;
+  color: #007bff;
   transform: scale(1.2);
   font-weight: 500;
 }
@@ -255,7 +254,7 @@ header {
 
 .dep2>li>a:hover {
   color: #0e0d0d;
-  border-bottom: #09b1ff 3px solid;
+  border-bottom: #007bff 3px solid;
 }
 
 .w100 {
@@ -264,14 +263,15 @@ header {
   position: absolute;
   top: 69px;
   transition: height 0.5s;
-  background-color: #f4f5f8f5;
+  background-color: #ffffff;
   z-index: 15;
-  border-radius: 8px;
   box-shadow: 5px 5px 3px rgb(145 152 164/15%);
 }
 
 .dep1:hover~.w100, .dep2:hover~.w100 {
   height: 400px;
+  border-top: 1px solid #9999999a;
+
 }
 
 .dep1:hover .dep2, .dep2:hover {
@@ -281,36 +281,43 @@ header {
 .sidenav {
   display: flex;
   width: 10%;
-  gap: 30px;
+  gap: 35px;
   justify-content: center;
   align-items: center;
-  margin-right: 70px;
+  margin-right: 60px;
 }
 
 .map {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background: url(../images/icon_header_map.png) no-repeat;
   display: inline-block;
+  padding: 2px;
+  box-sizing: border-box;
 }
 
 .profile {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background: url(../images/icon_header_profile1.png) no-repeat;
   display: inline-block;
+  padding: 2px;
+  box-sizing: border-box;
+
 }
 
 .lang_select:hover, .map:hover, .profile:hover {
-  background-color: hsl(187, 85%, 73%);
+  background-color: #b9d3dfc4;
   border-radius: 50%;
 }
 
 .lang_select {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background: url(../images/icon_header_lang.png) no-repeat;
   display: inline-block;
+  box-sizing: border-box;
+  padding: 2px;
 }
 
 .logo {
@@ -493,8 +500,8 @@ main {
   transition: border-radius .5s ease-in-out;
 }
 
-.quick nav ul li a:hover .icon{
- border-radius: 100%;
+.quick nav ul li a:hover .icon {
+  border-radius: 100%;
 }
 
 .icon img {
@@ -511,7 +518,7 @@ main {
   color: #29292c;
 }
 
-.quick nav ul li a:hover strong{
+.quick nav ul li a:hover strong {
   color: #007bff;
 }
 
@@ -519,7 +526,7 @@ main {
   width: 100vw;
   height: auto;
   margin-left: calc(-50vw + 50%);
-  padding: 6vw 0;
+  padding: 4vw 0;
   position: relative;
 }
 
@@ -618,7 +625,7 @@ main {
 }
 
 .section1 .title h2, .section3 .title h2 {
-  color: #666;
+  color: #444;
   font-size: 3.2rem;
   font-weight: 400;
 }
@@ -732,6 +739,19 @@ main {
   -webkit-text-fill-color: white;
 }
 
+/* section1 */
+
+.section1_sw .swiper-slide img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0 #0005;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+
 /* section2 */
 
 .section2 {
@@ -806,6 +826,7 @@ main {
   line-height: 1.4;
 }
 
+
 .section2 .swiper-slide:hover .caption2 strong {
   cursor: pointer;
   text-decoration: underline;
@@ -813,7 +834,79 @@ main {
 
 /* section3 */
 .section3 .swiper-slide img {
-      border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+
+/* section4 */
+.section4.bgcolor {
+  padding: 3vw 0 4vw 0;
+}
+
+.section4 .title h2 {
+  font-size: 1.6rem;
+  color: #444;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.section4_sw .swiper-slide a {
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  filter: drop-shadow(7px 4px 5px rgba(26, 26, 26, 0.1));
+}
+
+
+.section4_sw .swiper-slide .img {
+  display: block;
+  height: 16rem;
+  overflow: hidden;
+}
+
+.section4_sw .swiper-slide .img img {
+  border-radius: 0;
+}
+
+.section4_sw .swiper-slide .caption2 {
+  height: 6rem;
+  border-radius: 0 0 0.6rem 0.6rem;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.section4 .caption2 strong {
+  white-space: nowrap;
+  /* 줄바꿈 방지 */
+  overflow: hidden;
+  /* 넘치는 글자 숨김 */
+  text-overflow: ellipsis;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.section4 .caption2 span {
+  font-size: 14px;
+  color: #3d3d3d;
+  font-weight: 400;
+}
+
+
+.section4 .swiper-slide:hover .caption2 strong {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 
@@ -845,20 +938,11 @@ main {
 }
 
 /* 공통 스와이퍼 이미지 스타일 */
-.section1_sw .swiper-slide, .section2_sw .swiper-slide, .section3_sw .swiper-slide {
+.section1_sw .swiper-slide, .section2_sw .swiper-slide, .section3_sw .swiper-slide,
+.section4_sw .swiper-slide {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.section1_sw .swiper-slide img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 4px 4px 5px 0 #0005;
-  box-sizing: border-box;
-  margin: 10px 0;
 }
 
 
@@ -873,7 +957,6 @@ main {
   background-color: #007bff15;
   cursor: pointer;
 }
-
 
 
 /* banner 배너영역 */
@@ -1354,6 +1437,7 @@ footer {
 
   .logo {
     margin-left: 30px;
+    width: 15%;
   }
 
   .sidenav {
@@ -1394,7 +1478,7 @@ footer {
   }
 
   .gnb.sticky .hamburger-menu:hover {
-    color: #00d9ff;
+    color: #007bff;
   }
 
   .mainText h2 {
@@ -1437,7 +1521,7 @@ footer {
     bottom: 15%;
   }
 
-  .section1 .title h2, .section2 .title h2, .section3 .title h2 {
+  .section1 .title h2, .section2 .title h2, .section3 .title h2, .section4 .title h2 {
     font-size: 2rem;
   }
 
@@ -1535,6 +1619,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+
   .mainText h2 {
     font-size: 40px;
   }
@@ -1548,6 +1633,10 @@ footer {
   }
 
   .section1 .title p, .section2 .title p, .section3 .title p {
+    font-size: 1rem;
+  }
+
+  .quick nav ul li a strong{
     font-size: 1rem;
   }
 
