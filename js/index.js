@@ -163,8 +163,8 @@ function initMainSwiper() {
             clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".main_Swiper .swiper-next",
+            prevEl: ".main_Swiper .swiper-prev",
         },
     });
 }

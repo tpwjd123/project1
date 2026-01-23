@@ -568,6 +568,7 @@ main {
 .header_slide .swiper-next,
 .header_slide .swiper-prev {
   transform: translateY(0%);
+  cursor: pointer;
 }
 
 .header_slide .swiper-prev {
